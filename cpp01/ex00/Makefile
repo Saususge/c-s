@@ -1,5 +1,5 @@
 NAME := zombie
-CXX := g++
+CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
 SRCS := randomChump.cpp Zombie.cpp newZombie.cpp main.cpp
 OBJS := $(SRCS:.cpp=.o)

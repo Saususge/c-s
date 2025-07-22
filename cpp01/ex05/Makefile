@@ -1,5 +1,5 @@
-NAME := 
-CXX := g++
+NAME := harl
+CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
 SRCS := Harl.cpp main.cpp
 OBJS := $(SRCS:.cpp=.o)

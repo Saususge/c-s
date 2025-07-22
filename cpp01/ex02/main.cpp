@@ -13,6 +13,5 @@ int main()
 
 	std::cout << p << '\n';
 	std::cout << *stringPTR << '\n';
-	std::cout << stringREF << '\n';
-
+	std::cout << stringREF << std::endl;
 }

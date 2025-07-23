@@ -10,15 +10,10 @@ int main(int argc, char **argv)
 	std::string level = argv[1];
 
 	Harl blackConsumer;
-	int l = 4;
-	if (level == "DEBUG")
-		l = 0;
-	else if (level == "INFO")
-		l = 1;
-	else if (level == "WARNING")
-		l = 2;
-	else if (level == "ERROR")
-		l = 3;
+	std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	int l = 0;
+	while (l < 4 && levels[l] != level)
+		l++;
 
 	switch (l)
 	{

@@ -2,6 +2,7 @@
 #include "Array.hpp"
 #include <cstdlib>
 #include <ctime>
+#include <stdexcept>
 
 #define MAX_VAL 750
 int main(int, char**)
@@ -31,7 +32,7 @@ int main(int, char**)
     }
     try
 	{
-        numbers[-2] = 0;
+        numbers[MAX_VAL + 1] = 0;
     }
     catch(const std::exception& e)
     {

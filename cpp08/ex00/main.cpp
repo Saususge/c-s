@@ -7,8 +7,7 @@ int main()
 
 {
     std::vector<int> vec;
-    for (int i = 0; i < 10; i++)
-        vec.push_back(i);
+    for (int i = 0; i < 10; i++) { vec.push_back(i); }
 
 	try
 	{
@@ -16,7 +15,6 @@ int main()
         std::cout << "Found value: " << *it << std::endl;
     }
     catch(const std::exception& e)
-
 	{
         std::cerr << e.what() << '\n';
     }
@@ -30,9 +28,10 @@ int main()
 	{
         std::cerr << e.what() << '\n';
     }
+
     std::list<int> lst;
-    for (int i = 0; i < 10; i++)
-        lst.push_back(i);
+    for (int i = 0; i < 10; i++) { lst.push_back(i); }
+
 	try
 	{
         std::list<int>::iterator it = easyfind(lst, 8);
@@ -42,6 +41,7 @@ int main()
 	{
         std::cerr << e.what() << '\n';
     }
+
 	try
 	{
         std::list<int>::iterator it = easyfind(lst, -1);

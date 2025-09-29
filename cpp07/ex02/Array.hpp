@@ -3,7 +3,6 @@
 #define ARRAY_HPP
 
 #include <iostream>
-#include "Array.tpp"
 
 template <typename T>
 class Array
@@ -24,5 +23,7 @@ class Array
 
 		unsigned int size() const;
 };
+
+#include "Array.tpp"
 
 #endif
